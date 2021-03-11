@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+:root {
+    --primary-seema : #BE244D;
+    
+}
+body {
+
+margin: 0;
+padding: 0;
+font-family: 'Akaya Telivigala', cursive;
+}
+/************Style for Slider********************/
+.slider {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    padding: 10px;
+}
+.slider .details {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+/************************For Navbar*******************/
+.navbar {
+    height: 20vh;
+}
+.navbar .container {
+    display: flex;
+    
+}
+.container .logo-container {
+    flex: 1;
+}
+
+.navbar ul {
+    flex: 5;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    word-spacing: 20px;
+}
+.navbar li {
+    font-size: 20px;
+    padding-left: 20px;
+   
+}
+.navbar li a {
+    color: var(--primary-seema);
+}
+#navbarNav{
+    padding-top: 20px;
+}
+.navbar .menu-icons {
+   float: right;
+   margin-right: 400px;
+   display: flex;
+  padding-top: 40px;
+  position: relative;
+}
+.fa-search{
+    color:var(--primary-seema);
+}
+.fa-shopping-cart{
+color: var(--primary-seema);
+}
+.fa-user-alt {
+    color: var(--primary-seema);
+}
+.menu-icons .icons {
+    padding-left: 20px;
+}
+@media (max-width: 992px) {
+    .offcanvas-header{ display:block; }
+    .navbar-toggler{display: block;
+    }
+    .navbar-collapse {
+      position: fixed;
+      top:0; 
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color:var(--primary-seema);
+      transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+      visibility: visible;
+      transform: translateX(-100%);
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .navbar ul {
+        flex: 5;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        color: black;
+       
+        letter-spacing: 1px;
+       
+    }
+    .navbar li a 
+    {
+        color: black;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+  .offcanvas-header{ display:none; }
+  .navbar-toggler{display: none;}
+
+
+  
+
+
+ 
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+      }
+  .dropdown-content .use1, .dropdown-content .use2, .dropdown-content .use3{
+      
+      display: flex;
+      flex-direction: row;
+  }
+  .dropdown-content .use1 img,  .dropdown-content .use2 img,  .dropdown-content .use3 img{
+     
+      width: 80px;
+      height: 10vh;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: flex; overflow: hidden;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+ /******************Carousel Slider*******************/
+ * {box-sizing:border-box}
+
+ /* Slideshow container */
+ .slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+ 
+ /*Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 5s;
+   animation-name: fade;
+   animation-duration: 0.4s ease;
+ }
+ 
+ @-webkit-keyframes fade {
+   from {opacity: .9}
+   to {opacity: 1}
+ }
+ 
+ @keyframes fade {
+   from {opacity: .9}
+   to {opacity: 1}
+ }
+ 
+ 
+ .text  {
+     color: white;
+     font-size: 30px;
+     font-weight: bold;
+     font-family: sans-serif;
+ }
+ /***********Menu Card Hover*******************/
+
+ .row .container #menu_card :hover {
+     transform: rotate(-45deg);
+ }

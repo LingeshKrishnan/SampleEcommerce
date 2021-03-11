@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Ecommerce</title>
+    <link rel = "icon" href =  
+"img/SeemLogo.jpeg" 
+    type = "image/x-icon"> 
+<!--Bootstrap CDN-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+ <!--JQuery CDN-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--For Slick slider CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+<!--Font awesome css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+<!--Font awesome script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+
+<!--For Slick Slider Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!--Carousel Script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<!--Carousel CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+<script src="carousel.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+<header>
+    <!--Slick Slider for Announcements "Hello","Hola","Czesh"-->
+    <div class="slider">
+       
+        <div class="details">
+            <span>Amazing Offer</span>
+        </div>
+        <div class="details">
+            <span>Super Sale</span>
+        </div>
+        <div class="details">
+            <span>Get Discount</span>
+        </div>
+    </div>   
+
+    <!--Navbar with contents-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+        <div class="container">
+            <div class="logocontainer">
+            <a class="navbar-brand" href="#"><img src="img/SeemLogo.jpeg" alt=""></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+                <ul class="navbar-nav">
+                    <li class="navbar-item "><a href="">Home</a></li>
+                    <li class="navbar-item"><a href="">Product</a></li>
+                    <div class="dropdown">
+                        <li class="navbar-item"><a href="">Skyfruits</a></li>
+                        <div class="dropdown-content">
+                           <div class="use1"> <a href=""><img src="img/1.jpg" alt="No Preview"/>Use 1</a></div>
+                           <div class="use2"> <a href=""><img src="img/1.jpg" alt="No Preview"/>Use 2</a></div>
+                           <div class="use3"> <a href=""><img src="img/1.jpg" alt="No Preview"/>Use 3</a></div>
+                        </div>
+                    </div>
+                    <li class="navbar-item"><a href="">Comapny</a></li>
+                    <li class="navbar-item"><a href="">Media</a></li>
+                    <li class="navbar-item"><a href="">Brand</a></li>
+                    
+                    
+                </ul>
+               
+                
+
+            </div>
+           
+        
+        
+        <div class="menu-icons">
+            <a href="#" class="icons"><i class="fas fa-search fa-3x"></i></a>
+            <a href="#" class="icons"><i class="fas fa-shopping-cart fa-3x"></i></a>
+            <a href="#" class="icons"><i class="fas fa-user-alt fa-3x"></i></a>
+        </div>
+    </div>
+    </nav>
+    
+  
+</header>
+
+<section id="one">
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        
+        <div class="mySlides fade">
+            
+          <img src="img/c3.jpg" style="width:100%">
+          <div class="text">         
+                Get Great Deals
+
+          </div>
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/c3.jpg" style="width:100%">
+          <div class="text">Amazing Offer</div>
+        </div>
+      
+        <div class="mySlides fade">
+          
+          <img src="img/c3.jpg" style="width:100%">
+          <div class="text">Get Coupon Code</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+</section>
+
+<section id="two">
+    <div class="row">
+        <div class="container">
+        <div class="col-lg-3 col-md-3" id="menu_card">
+            <img src="img/1.jpg" alt="">
+            <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+        </div>
+        <div class="col-lg-3 col-md-3" id="menu_card">
+            <img src="img/1.jpg" alt="">
+            <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+        </div>
+        <div class="col-lg-3 col-md-3" id="menu_card">
+            <img src="img/1.jpg" alt="">
+            <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+        </div>
+        <div class="col-lg-3 col-md-3" id="menu_card">
+            <img src="img/1.jpg" alt="">
+            <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+        </div>
+    </div>
+        </div>
+
+        <div class="row">
+            <div class="container">
+            <div class="col-lg-3 col-md-3" id="menu_card">
+                <img src="img/1.jpg" alt=""><br/>
+                <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+            </div>
+            <div class="col-lg-3 col-md-3" id="menu_card">
+                <img src="img/1.jpg" alt="">
+                <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+            </div>
+            <div class="col-lg-3 col-md-3" id="menu_card">
+                <img src="img/1.jpg" alt="">
+                <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+            </div>
+            <div class="col-lg-3 col-md-3" id="menu_card">
+                <img src="img/1.jpg" alt="">
+                <a href="#" style="margin-left: 55px; color: black; font-size: 20px; padding-top:-20px;">Add to Cart</a>&nbsp;<i class="far fa-plus-square fa-2x"></i>
+            </div>
+        </div>
+            </div>
+</section>
+    <script>
+
+     
+            $('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed:2000,
+  prevArrow : false,
+  nextArrow :false,
+  dots: false,
+  cssEase : 'ease-in-out',
+  
+});
+
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+    </script>
+
+    <!--JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<!--Carousel Script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<!--Carousel CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+
+</body>
+</html>
